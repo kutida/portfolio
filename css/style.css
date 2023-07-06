@@ -1,0 +1,113 @@
+.hero{
+    background-image: url(../images/yama3.svg);
+    padding-top: 10vh;
+    background-size: 120%;
+    background-position: 40% 45%;
+    
+
+
+}
+section{
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  
+   
+}
+.title{
+    font-family: 'Dencing Script',cursive;
+    font-size: 7rem;
+    margin-bottom: 2rem;
+    font-family: 'Dancing Script',cursive;
+    font-size: 7rem;
+    margin-bottom: 2rem;
+}
+@media(max-width:700px){
+    .title{
+        font-size: 4rem;
+    }
+}
+.hero2{
+   
+    text-align: left;
+    padding-top: 10vh;
+}
+.hero2 h1{
+    padding-left: 250px;
+}
+.hero2 p{
+    padding-left: 250px;
+   margin: 20px;
+}
+.box1{
+    float: left;
+}
+.boxA ::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.box2{
+    float: left;
+    margin: 20px;
+}
+.hero3{
+
+    background-image: url(../images/breads-gd7f9aef33_1280.jpg);
+    text-align: center;
+    padding-top: 10vh;
+}
+.hero3 p{
+    margin: 20px;
+}
+.container{
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+}
+.hero3 ul{
+    display: flex;
+    font-size: 3em;
+    justify-content: center;
+    align-items: center;
+    
+}
+.hero3 li{
+    margin: 20px;
+}
+.hero3 a{
+    color: aliceblue;
+}
+.hero .logo{
+    position: relative;
+    top: 0vh;
+    left: 70%;
+}
+.grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 56vw 56vw;
+  grid-template-rows: 300px 300px 300px 300px ;
+}
+img {
+    width: 30%;
+    height: 240px;
+    object-fit: cover;
+}
+.fadeUp{
+    animation-name: anime;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@keyframes anime{
+    from{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
